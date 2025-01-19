@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Document</title>
+    <style>
+      /***
+       * Product Card
+       */
+
+      .product-card {
+        flex: 1 0 35rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.2rem 0.4rem 0 hsl(0 0% 0% / 0.16);
+      }
+
+      .product-card:hover {
+        /* prettier-ignore */
+        box-shadow: 
+          0 1.3rem 2.7rem -0.5rem hsl(0 0% 0% / 0.25),
+          0 0.8rem 1.6rem -0.8rem hsl(0 0% 0% / 0.3);
+      }
+
+      .product-card__image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15rem;
+      }
+
+      .product-card__image {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .product-card__heading {
+        margin-block-start: 0.7rem;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+      }
+
+      .product-card__description {
+        margin-block-start: 1.2rem;
+        line-height: 1.5;
+      }
+
+      .product-card__list {
+        list-style-type: "．";
+        list-style-position: inside;
+      }
+
+      .product-card__item {
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Product Card -->
+    <div class="product-card" style="max-width: 35rem">
+      <figure class="product-card__image-wrapper">
+        <img class="product-card__image" src="../asset/image/html5.jpg" alt="HTML5 基礎教學" />
+      </figure>
+      <h2 class="product-card__heading">HTML5 基礎教學</h2>
+      <p class="product-card__description">
+        主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+      </p>
+    </div>
+
+    <!-- Product Card -->
+    <div class="product-card" style="max-width: 35rem">
+      <figure class="product-card__image-wrapper">
+        <img
+          class="product-card__image"
+          src="../asset/image/responsive-web-design.jpg"
+          alt="響應式網站設計"
+        />
+      </figure>
+      <h2 class="product-card__heading">響應式網站設計</h2>
+      <p class="product-card__description">
+        響應式網站設計 (Responsive web
+        design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+      </p>
+    </div>
+
+    <!-- Product Card -->
+    <div class="product-card" style="max-width: 35rem">
+      <figure class="product-card__image-wrapper">
+        <img class="product-card__image" src="../asset/image/jquery.jpg" alt="jQuery 實戰教學" />
+      </figure>
+      <h2 class="product-card__heading">jQuery 實戰教學</h2>
+      <p class="product-card__description">本課程有以下特色：</p>
+      <ul class="product-card__list">
+        <li class="product-card__item">瞭解變數的使用方法</li>
+        <li class="product-card__item">學習並操作DOM</li>
+        <li class="product-card__item">學習基本數學運算方法</li>
+        <li class="product-card__item">套件的操作及運用</li>
+      </ul>
+    </div>
+  </body>
+</html>

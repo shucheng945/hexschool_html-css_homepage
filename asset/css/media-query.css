@@ -1,0 +1,55 @@
+@media screen and (width <= 576px) {
+  /***
+   * Footer
+   */
+
+  .footer__wrapper {
+    flex-direction: column;
+  }
+
+  .footer__wrapper > * + * {
+    margin-block-start: 1.6rem;
+  }
+
+  /***
+   * Header
+   */
+
+  .header__wrapper {
+    flex-direction: column;
+    padding-block-start: 2.6rem;
+    padding-inline: 0;
+  }
+
+  .header__wrapper > * + * {
+    margin-block-start: 1.6rem;
+  }
+
+  /***
+   * Navigation List
+   */
+
+  .navigation-list__link {
+    padding-block: 0 2.6rem;
+  }
+}
+
+@media screen and (width <= 992px) {
+  /***
+   * Banner
+   */
+
+  .banner {
+    background-position: 80% bottom;
+  }
+
+  .banner__wrapper {
+    background-color: hsl(0 0% 100% / 0.5);
+    backdrop-filter: blur(1.6rem);
+  }
+
+  .banner__text {
+    text-align: center;
+    text-wrap: balance;
+  }
+}

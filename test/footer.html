@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Document</title>
+    <style>
+      /***
+       * Footer
+       */
+
+      .footer {
+        padding-block: 1.6rem;
+        background: hsl(240 13% 97%);
+      }
+
+      .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /***
+       * Media Query
+       */
+
+      @media screen and (width <= 576px) {
+        /***
+         * Footer
+         */
+
+        .footer__wrapper {
+          flex-direction: column;
+        }
+
+        .footer__wrapper > * + * {
+          margin-block-start: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Wrapper & Wrapper as part of Footer -->
+      <div class="wrapper footer__wrapper">
+        <!-- Brand -->
+        <div class="brand">
+          <a class="brand__link" href="#index">六角學院</a>
+        </div>
+
+        <!-- Contact List -->
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            聯絡我們：
+            <a class="contact-list__link" href="#mailto:service@hexschool.com">
+              service@hexschool.com
+            </a>
+          </li>
+          <li class="contact-list__item">
+            電話：
+            <a class="contact-list__link" href="#tel:+886-987654321">0987654321</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

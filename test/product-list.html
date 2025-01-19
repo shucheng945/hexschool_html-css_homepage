@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Document</title>
+    <style>
+      /***
+       * Product List
+       */
+
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+
+      .product-list__item {
+        flex: 0 0 min(100%, 35rem);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Product List -->
+    <ul class="product-list">
+      <li class="product-list__item">
+        <!-- Product Card -->
+        <div class="product-card">
+          <figure class="product-card__image-wrapper">
+            <img class="product-card__image" src="../asset/image/html5.jpg" alt="HTML5 基礎教學" />
+          </figure>
+          <h2 class="product-card__heading">HTML5 基礎教學</h2>
+          <p class="product-card__description">
+            主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+          </p>
+        </div>
+      </li>
+      <li class="product-list__item">
+        <!-- Product Card -->
+        <div class="product-card">
+          <figure class="product-card__image-wrapper">
+            <img
+              class="product-card__image"
+              src="../asset/image/responsive-web-design.jpg"
+              alt="響應式網站設計"
+            />
+          </figure>
+          <h2 class="product-card__heading">響應式網站設計</h2>
+          <p class="product-card__description">
+            響應式網站設計 (Responsive web
+            design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+          </p>
+        </div>
+      </li>
+      <li class="product-list__item">
+        <!-- Product Card -->
+        <div class="product-card">
+          <figure class="product-card__image-wrapper">
+            <img
+              class="product-card__image"
+              src="../asset/image/jquery.jpg"
+              alt="jQuery 實戰教學"
+            />
+          </figure>
+          <h2 class="product-card__heading">jQuery 實戰教學</h2>
+          <p class="product-card__description">本課程有以下特色：</p>
+          <ul class="product-card__list">
+            <li class="product-card__item">瞭解變數的使用方法</li>
+            <li class="product-card__item">學習並操作DOM</li>
+            <li class="product-card__item">學習基本數學運算方法</li>
+            <li class="product-card__item">套件的操作及運用</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

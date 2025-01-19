@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Document</title>
+    <style>
+      /***
+       * Button
+       */
+
+      .button {
+        padding: 0.842rem 6.25rem;
+        border: 0.1rem solid hsl(162 100% 7%);
+        border-radius: 0.3rem;
+        box-shadow: 0 0.5rem 1.5rem 0 hsl(0 0% 0% / 0.35);
+        font: inherit;
+        line-height: 1.2;
+        cursor: pointer;
+      }
+
+      .button:focus-visible {
+        border-radius: 0.3rem;
+        outline: 0.2rem solid hsl(165 100% 40%);
+      }
+
+      .button:active {
+        box-shadow: 0 0 0.1rem 0 hsl(0 0% 0%) inset;
+        transform: translateY(0.3rem);
+      }
+
+      .button--primary {
+        background-color: hsl(162 100% 7%);
+        color: hsl(0 0% 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Button -->
+    <button class="button button--primary" type="submit">送出</button>
+
+    <!-- Button -->
+    <input class="button button--primary" type="submit" value="送出" />
+  </body>
+</html>

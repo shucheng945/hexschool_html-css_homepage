@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Document</title>
+    <style>
+      /*** 
+       * Brand
+       */
+
+      .brand {
+        font-size: 3.6rem;
+      }
+
+      .brand__link {
+        display: block;
+        width: min(100%, 15.006rem);
+        height: 3.6rem;
+        background-image: url("../asset/svg/brand.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: clip;
+      }
+
+      .brand__link:focus-visible {
+        border-radius: 0.3rem;
+        outline: 0.2rem solid hsl(165 100% 40%);
+      }
+
+      .brand__link:active {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Brand -->
+    <h1 class="brand">
+      <a class="brand__link" href="#index">六角學院</a>
+    </h1>
+
+    <!-- Brand -->
+    <div class="brand">
+      <a class="brand__link" href="#index">六角學院</a>
+    </div>
+  </body>
+</html>

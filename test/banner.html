@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/media-query.css" />
+    <title>Document</title>
+    <style>
+      /***
+       * Banner
+       */
+
+      .banner {
+        padding-block: 12.55rem;
+        background-color: hsl(0 0% 95%);
+        background-image: url("../asset/image/banner.jpg");
+        background-repeat: no-repeat;
+        background-position: center 90%;
+        background-size: cover;
+        transition: 3s ease;
+      }
+
+      .banner__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: 2.65rem;
+        padding-inline: 1.6rem;
+        background-color: hsl(0 0% 100% / 0.15);
+      }
+
+      .banner__text {
+        width: min(100%, 79.2rem);
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: hsl(0 0% 12%);
+        line-height: 1.2;
+      }
+
+      /***
+       * Media Query
+       */
+
+      @media screen and (width <= 992px) {
+        /***
+         * Banner
+         */
+
+        .banner {
+          background-position: 80% bottom;
+        }
+
+        .banner__wrapper {
+          background-color: hsl(0 0% 100% / 0.5);
+          backdrop-filter: blur(1.6rem);
+        }
+
+        .banner__text {
+          text-align: center;
+          text-wrap: balance;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="banner__wrapper">
+        <p class="banner__text">六角學院</p>
+        <p class="banner__text">您奠定良好的前端基礎</p>
+      </div>
+    </div>
+  </body>
+</html>

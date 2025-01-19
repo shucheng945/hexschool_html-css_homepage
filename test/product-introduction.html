@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Document</title>
+    <style>
+      /***
+       * Product Introduction
+       */
+
+      .product-introduction {
+        padding-block: 6rem;
+      }
+
+      .product-introduction__wrapper > * + * {
+        margin-block-start: 6rem;
+      }
+
+      .product-introduction__product-list {
+        justify-content: center;
+      }
+
+      .product-introduction__product-table {
+        max-width: 92rem;
+        margin-inline: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Product Introduction -->
+    <div class="product-introduction">
+      <!-- Wrapper & Wrapper as part of Product Introduction -->
+      <div class="wrapper product-introduction__wrapper">
+        <!-- Product List & Product List as part of Product Introduction -->
+        <ul class="product-list product-introduction__product-list">
+          <li class="product-list__item">
+            <!-- Product Card -->
+            <div class="product-card">
+              <figure class="product-card__image-wrapper">
+                <img
+                  class="product-card__image"
+                  src="../asset/image/html5.jpg"
+                  alt="HTML5 基礎教學"
+                />
+              </figure>
+              <h2 class="product-card__heading">HTML5 基礎教學</h2>
+              <p class="product-card__description">
+                主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+              </p>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <!-- Product Card -->
+            <div class="product-card">
+              <figure class="product-card__image-wrapper">
+                <img
+                  class="product-card__image"
+                  src="../asset/image/responsive-web-design.jpg"
+                  alt="響應式網站設計"
+                />
+              </figure>
+              <h2 class="product-card__heading">響應式網站設計</h2>
+              <p class="product-card__description">
+                響應式網站設計 (Responsive web
+                design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+              </p>
+            </div>
+          </li>
+          <li class="product-list__item">
+            <!-- Product Card -->
+            <div class="product-card">
+              <figure class="product-card__image-wrapper">
+                <img
+                  class="product-card__image"
+                  src="../asset/image/jquery.jpg"
+                  alt="jQuery 實戰教學"
+                />
+              </figure>
+              <h2 class="product-card__heading">jQuery 實戰教學</h2>
+              <p class="product-card__description">本課程有以下特色：</p>
+              <ul class="product-card__list">
+                <li class="product-card__item">瞭解變數的使用方法</li>
+                <li class="product-card__item">學習並操作DOM</li>
+                <li class="product-card__item">學習基本數學運算方法</li>
+                <li class="product-card__item">套件的操作及運用</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Product Table & Product Table as part of Product Introduction -->
+        <div class="product-table product-introduction__product-table">
+          <h2 class="product-table__heading" id="course-differences">線上課程及實體課程的差異</h2>
+          <div class="product-table__scroll-wrapper">
+            <table class="product-table__body" aria-labelledby="course-differences">
+              <thead>
+                <tr>
+                  <th class="product-table__header-cell">項目</th>
+                  <th class="product-table__header-cell">六角學院線上課程</th>
+                  <th class="product-table__header-cell">一般線上課程</th>
+                  <th class="product-table__header-cell">實體課程</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="product-table__data-cell">費用</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">較低</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">較低</td>
+                  <td class="product-table__data-cell">較高</td>
+                </tr>
+                <tr>
+                  <td class="product-table__data-cell">學習效果</td>
+                  <td class="product-table__data-cell">一般</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">較低</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">很好</td>
+                </tr>
+                <tr>
+                  <td class="product-table__data-cell">Code Review</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">有</td>
+                  <td class="product-table__data-cell">無</td>
+                  <td class="product-table__data-cell">不一定</td>
+                </tr>
+                <tr>
+                  <td class="product-table__data-cell">課程更新速度</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">普通</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">普通</td>
+                  <td class="product-table__data-cell">較慢</td>
+                </tr>
+                <tr>
+                  <td class="product-table__data-cell">多次學習</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">可</td>
+                  <td class="product-table__data-cell">可</td>
+                  <td class="product-table__data-cell">不可</td>
+                </tr>
+                <tr>
+                  <td class="product-table__data-cell">字幕</td>
+                  <td class="product-table__data-cell product-table__data-cell--accent">有</td>
+                  <td class="product-table__data-cell">不一定</td>
+                  <td class="product-table__data-cell">板書</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

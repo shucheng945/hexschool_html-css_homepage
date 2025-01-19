@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/css/reset.css" />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <title>Document</title>
+    <style>
+      /***
+       * Product Table
+       */
+
+      .product-table {
+        width: 100%;
+      }
+
+      .product-table__heading {
+        margin-block-end: 2.4rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        text-wrap: balance;
+      }
+
+      .product-table__scroll-wrapper {
+        overflow: auto;
+      }
+
+      .product-table__scroll-wrapper:focus-visible {
+        border-radius: 0.3rem;
+        outline: 0.2rem solid hsl(165 100% 40%);
+      }
+
+      .product-table__body {
+        width: 100%;
+      }
+
+      .product-table__header-cell {
+        padding: 0.545rem 1.7rem;
+        border-block: 0.1rem solid hsl(0 0% 80%);
+        font-weight: 700;
+        text-align: left;
+        text-wrap: nowrap;
+        line-height: 1.5;
+      }
+
+      .product-table__data-cell {
+        padding: 0.545rem 1.7rem;
+        border-block-end: 0.1rem solid hsl(0 0% 80%);
+        text-wrap: nowrap;
+        line-height: 1.5;
+      }
+
+      .product-table__data-cell--accent {
+        font-weight: 700;
+        color: hsl(165 100% 40%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Product Table -->
+    <div class="product-table" style="max-width: 92rem; margin-inline: auto">
+      <h2 class="product-table__heading" id="course-differences">線上課程及實體課程的差異</h2>
+      <div class="product-table__scroll-wrapper">
+        <table class="product-table__body" aria-labelledby="course-differences">
+          <thead>
+            <tr>
+              <th class="product-table__header-cell">項目</th>
+              <th class="product-table__header-cell">六角學院線上課程</th>
+              <th class="product-table__header-cell">一般線上課程</th>
+              <th class="product-table__header-cell">實體課程</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product-table__data-cell">費用</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">較低</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">較低</td>
+              <td class="product-table__data-cell">較高</td>
+            </tr>
+            <tr>
+              <td class="product-table__data-cell">學習效果</td>
+              <td class="product-table__data-cell">一般</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">較低</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">很好</td>
+            </tr>
+            <tr>
+              <td class="product-table__data-cell">Code Review</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">有</td>
+              <td class="product-table__data-cell">無</td>
+              <td class="product-table__data-cell">不一定</td>
+            </tr>
+            <tr>
+              <td class="product-table__data-cell">課程更新速度</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">普通</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">普通</td>
+              <td class="product-table__data-cell">較慢</td>
+            </tr>
+            <tr>
+              <td class="product-table__data-cell">多次學習</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">可</td>
+              <td class="product-table__data-cell">可</td>
+              <td class="product-table__data-cell">不可</td>
+            </tr>
+            <tr>
+              <td class="product-table__data-cell">字幕</td>
+              <td class="product-table__data-cell product-table__data-cell--accent">有</td>
+              <td class="product-table__data-cell">不一定</td>
+              <td class="product-table__data-cell">板書</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
